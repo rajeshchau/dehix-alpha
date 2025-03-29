@@ -2,13 +2,13 @@
 import { useSelector } from 'react-redux';
 
 import { RootState } from '@/lib/store';
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/business/settingsMenuItems';
-import Header from '@/components/header/header';
-import { KYCForm } from '@/components/form/kycBusinessForm';
+} from '../../../config/menuItems/business/settingsMenuItems';
+import Header from '../../../components/header/header';
+import { KYCForm } from '../../../components/form/kycBusinessForm';
 
 export default function PersonalInfo() {
   const user = useSelector((state) => state.user);

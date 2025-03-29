@@ -8,7 +8,7 @@ import {
   CheckCircle,
 } from 'lucide-react';
 
-import TalentLayout from '@/components/marketComponents/TalentLayout';
+import TalentLayout from '../../../components/marketComponents/TalentLayout';
 import {
   Card,
   CardContent,
@@ -16,10 +16,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Badge } from '@/components/ui/badge';
+} from '../../../components/ui/card';
+import { Button } from '../../../components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '../../../components/ui/avatar';
+import { Badge } from '../../../components/ui/badge';
 
 // Sample data for accepted talents
 const acceptedTalents = [

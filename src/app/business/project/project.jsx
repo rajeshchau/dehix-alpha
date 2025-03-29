@@ -4,28 +4,28 @@ import { CalendarX2 } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { CardHeader, CardTitle } from '@/components/ui/card';
+import { CardHeader, CardTitle } from '../../../components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
-} from '@/components/ui/carousel';
-import { Progress } from '@/components/ui/progress';
-import ProjectDetailCard from '@/components/freelancer/project/projectDetailCard';
-import SidebarMenu from '@/components/menu/sidebarMenu';
+} from '../../../components/ui/carousel';
+import { Progress } from '../../../components/ui/progress';
+import ProjectDetailCard from '../../../components/freelancer/project/projectDetailCard';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsTop,
   menuItemsBottom,
-} from '@/config/menuItems/business/dashboardMenuItems';
-import { axiosInstance } from '@/lib/axiosinstance';
-import ProjectSkillCard from '@/components/business/projectSkillCard';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import BidsDetails from '@/components/freelancer/project/bidsDetail';
-import { StatusEnum } from '@/utils/freelancer/enum';
-import { toast } from '@/components/ui/use-toast';
-import Header from '@/components/header/header';
+} from '../../../config/menuItems/business/dashboardMenuItems';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import ProjectSkillCard from '../../../components/business/projectSkillCard';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../components/ui/tabs';
+import BidsDetails from '../../../components/freelancer/project/bidsDetail';
+import { StatusEnum } from '../../../utils/freelancer/enum';
+import { toast } from '../../../components/ui/use-toast';
+import Header from '../../../components/header/header';
 
 export default function Dashboard() {
   const { project_id } = useParams();

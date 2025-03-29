@@ -3,17 +3,17 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'next/navigation';
 
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import Header from '@/components/header/header';
-import MilestoneTimeline from '@/components/shared/MilestoneTimeline';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import Header from '../../../components/header/header';
+import MilestoneTimeline from '../../../components/shared/MilestoneTimeline';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/business/dashboardMenuItems';
-import { Button } from '@/components/ui/button';
-import { CreateMilestoneDialog } from '@/components/shared/CreateMilestoneDialog';
-import { axiosInstance } from '@/lib/axiosinstance';
-import { toast } from '@/components/ui/use-toast';
+} from '../../../config/menuItems/business/dashboardMenuItems';
+import { Button } from '../../../components/ui/button';
+import { CreateMilestoneDialog } from '../../../components/shared/CreateMilestoneDialog';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import { toast } from '../../../components/ui/use-toast';
 
 const Page = () => {
   const { project_id } = useParams();

@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'react-router-dom';
-import { ThemeToggle } from './components/shared/ThemeToggle';
-import FreelancerRegisterForm from './components/form/register/FreelancerRegisterForm';
-import { Button } from './components/ui/Button';
+import { ThemeToggle } from '../../../../components/shared/ThemeToggle';
+import FreelancerRegisterForm from '../../../../components/form/register/FreelancerRegisterForm';
+import { Button } from '../../../../components/ui/Button';
 
 export default function SignUp() {
   return (
