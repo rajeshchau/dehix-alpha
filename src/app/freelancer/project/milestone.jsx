@@ -3,15 +3,15 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { PackageOpen } from 'lucide-react';
 
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import Header from '@/components/header/header';
-import MilestoneTimeline from '@/components/shared/MilestoneTimeline';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import Header from '../../../components/header/header';
+import MilestoneTimeline from '../../../components/shared/MilestoneTimeline';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/dashboardMenuItems';
-import { toast } from '@/components/ui/use-toast';
-import { axiosInstance } from '@/lib/axiosinstance';
+} from '../../../config/menuItems/freelancer/dashboardMenuItems';
+import { toast } from '../../../components/ui/use-toast';
+import { axiosInstance } from '../../../lib/axiosinstance';
 
 const Page = () => {
   const { project_id } = useParams();

@@ -9,14 +9,14 @@ import {
 } from 'lucide-react';
 import { useParams } from 'next/navigation';
 
-import { CardTitle } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
-import InterviewCard from '@/components/shared/interviewCard';
-import ProjectDetailCard from '@/components/business/project/projectDetailCard';
-import { ProjectProfileDetailCard } from '@/components/business/project/projectProfileDetailCard';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import dummyData from '@/dummydata.json';
-import Header from '@/components/header/header';
+import { CardTitle } from '../../components/ui/card';
+import { Separator } from '../../components/ui/separator';
+import InterviewCard from '../../components/shared/interviewCard';
+import ProjectDetailCard from '../../components/business/project/projectDetailCard';
+import { ProjectProfileDetailCard } from '../../components/business/project/projectProfileDetailCard';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import dummyData from '../../dummydata.json';
+import Header from '../../components/header/header';
 
 export default function Dashboard() {
   const { project_id } = useParams();

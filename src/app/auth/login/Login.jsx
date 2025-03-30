@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { LoaderCircle, Chrome, Key, Eye, EyeOff } from 'lucide-react';
-
-// Mock components - in a real implementation, you would need to create or import these
 const ThemeToggle = () => <button>Toggle Theme</button>;
 const Button = ({ children, type, className, disabled, asChild, variant, size, onClick }) => (
   <button 

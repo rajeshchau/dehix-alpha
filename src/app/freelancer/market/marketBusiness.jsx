@@ -1,14 +1,14 @@
 'use client';
-import { Search } from '@/components/search';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import Breadcrumb from '@/components/shared/breadcrumbList';
-import CollapsibleSidebarMenu from '@/components/menu/collapsibleSidebarMenu';
-import DropdownProfile from '@/components/shared/DropdownProfile';
+import { Search } from '../../../components/search';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import Breadcrumb from '../../../components/shared/breadcrumbList';
+import CollapsibleSidebarMenu from '../../../components/menu/collapsibleSidebarMenu';
+import DropdownProfile from '../../../components/shared/DropdownProfile';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/dashboardMenuItems';
-import BusinessProfile from '@/components/marketComponents/businessProfile/businessProfile';
+} from '../../../config/menuItems/freelancer/dashboardMenuItems';
+import BusinessProfile from '../../../components/marketComponents/businessProfile/businessProfile';
 
 export default function Talent() {
   return (

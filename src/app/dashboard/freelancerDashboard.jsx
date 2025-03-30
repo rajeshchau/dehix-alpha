@@ -3,29 +3,29 @@ import { CalendarX2, CheckCircle, ChevronRight, Clock } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import ProfileCompletion from '@/components/dash-comp/profile-completion/page';
-import ProjectTableCard from '@/components/freelancer/homeTableComponent';
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import StatCard from '@/components/shared/statCard';
-import { Button } from '@/components/ui/button';
+import ProfileCompletion from '../../components/dash-comp/profile-completion/page';
+import ProjectTableCard from '../../components/freelancer/homeTableComponent';
+import Header from '../../components/header/header';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import StatCard from '../../components/shared/statCard';
+import { Button } from '../../components/ui/button';
 import {
     Card,
     CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
-} from '@/components/ui/card';
-import MeetingDialog from '@/components/ui/meetingDialog';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { toast } from '@/components/ui/use-toast';
+} from '../../components/ui/card';
+import MeetingDialog from '../../components/ui/meetingDialog';
+import { Skeleton } from '../../components/ui/skeleton';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
+import { toast } from '../../components/ui/use-toast';
 import {
     menuItemsBottom,
     menuItemsTop,
-} from '@/config/menuItems/freelancer/dashboardMenuItems';
-import { axiosInstance } from '@/lib/axiosinstance';
-import { StatusEnum } from '@/utils/freelancer/enum';
+} from '../../config/menuItems/freelancer/dashboardMenuItems';
+import { axiosInstance } from '../../lib/axiosinstance';
+import { StatusEnum } from '../../utils/freelancer/enum';
 
 export default function Dashboard() {
   const user = useSelector((state) => state.user);

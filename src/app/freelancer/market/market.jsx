@@ -3,19 +3,19 @@ import { Loader2, X } from 'lucide-react';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import JobCard from '@/components/opportunities/jobs/jobs';
-import MobileSkillDom from '@/components/opportunities/mobile-opport/mob-skills-domain/mob-skilldom';
-import SkillDom from '@/components/opportunities/skills-domain/skilldom';
-import { Button } from '@/components/ui/button';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { toast } from '@/components/ui/use-toast';
+import Header from '../../../components/header/header';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import JobCard from '../../../components/opportunities/jobs/jobs';
+import MobileSkillDom from '../../../components/opportunities/mobile-opport/mob-skills-domain/mob-skilldom';
+import SkillDom from '../../../components/opportunities/skills-domain/skilldom';
+import { Button } from '../../../components/ui/button';
+import { ScrollArea } from '../../../components/ui/scroll-area';
+import { toast } from '../../../components/ui/use-toast';
 import {
     menuItemsBottom,
     menuItemsTop,
-} from '@/config/menuItems/freelancer/dashboardMenuItems';
-import { axiosInstance } from '@/lib/axiosinstance';
+} from '../../../config/menuItems/freelancer/dashboardMenuItems';
+import { axiosInstance } from '../../../lib/axiosinstance';
 
 const Market = () => {
   const user = useSelector((state) => state.user);

@@ -2,51 +2,33 @@
 import { Filter, PackageOpen } from 'lucide-react';
 import { useState, useEffect, useCallback } from 'react';
 
-import { Button } from '@/components/ui/button';
-import Header from '@/components/header/header';
+import { Button } from '../../../components/ui/button';
+import Header from '../../../components/header/header';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from '@/components/ui/dialog';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import SidebarMenu from '@/components/menu/sidebarMenu';
+} from '../../../components/ui/dialog';
+import { RadioGroup, RadioGroupItem } from '../../../components/ui/radio-group';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/oracleMenuItems';
-// import dummyData from '@/dummydata.json';
-import { axiosInstance } from '@/lib/axiosinstance';
-import ProjectVerificationCard from '@/components/cards/oracleDashboard/projectVerificationCard';
-import { StatusEnum } from '@/utils/freelancer/enum';
-import { toast } from '@/components/ui/use-toast';
-
-type FilterOption = 'all' | 'current' | 'verified' | 'rejected';
-interface ProjectData {
-  _id: string;
-  projectName: string;
-  description: string;
-  githubLink: string;
-  start: string;
-  end: string;
-  refer: string;
-  techUsed: string[];
-  comments: string;
-  role: string;
-  projectType: string;
-  verificationStatus: string;
-  onStatusUpdate: (newStatus: string) => void;
-  onCommentUpdate: (newComment: string) => void;
-}
+} from '../../../config/menuItems/freelancer/oracleMenuItems';
+// import dummyData from '../../../dummydata.json';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import ProjectVerificationCard from '../../../components/cards/oracleDashboard/projectVerificationCard';
+import { StatusEnum } from '../../../utils/freelancer/enum';
+import { toast } from '../../../components/ui/use-toast';
 
 export default function ProfessionalInfo() {
-  const [projectData, setProjectData] = useState<ProjectData[]>([]);
-  const [filter, setFilter] = useState<FilterOption>('all');
+  const [projectData, setProjectData] = useState([]);
+  const [filter, setFilter] = useState('all');
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  const handleFilterChange = (newFilter: FilterOption) => {
+  const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
     setIsDialogOpen(false);
   };
@@ -68,9 +50,9 @@ export default function ProfessionalInfo() {
       );
       const result = response.data.data;
 
-      const flattenedData = result.flatMap((entry: any) =>
+      const flattenedData = result.flatMap((entry) =>
         entry.result?.projects
-          ? Object.values(entry.result.projects).map((project: any) => ({
+          ? Object.values(entry.result.projects).map((project) => ({
               ...project,
               verifier_id: entry.verifier_id,
               verifier_username: entry.verifier_username,
@@ -93,13 +75,13 @@ export default function ProfessionalInfo() {
     fetchData();
   }, [fetchData]);
 
-  const updateProjectStatus = (index: number, newStatus: string) => {
+  const updateProjectStatus = (index, newStatus) => {
     const updatedData = [...projectData];
     updatedData[index].verificationStatus = newStatus;
     setProjectData(updatedData); // Assuming you set this in state
   };
 
-  const updateCommentStatus = (index: number, newComment: string) => {
+  const updateCommentStatus = (index, newComment) => {
     const updatedData = [...projectData];
     updatedData[index].comments = newComment;
     setProjectData(updatedData);
@@ -108,8 +90,8 @@ export default function ProfessionalInfo() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-muted/40">
       <SidebarMenu
-        menuItemsTop={menuItemsTop} // Assuming these are defined elsewhere
-        menuItemsBottom={menuItemsBottom} // Assuming these are defined elsewhere
+        menuItemsTop={menuItemsTop}
+        menuItemsBottom={menuItemsBottom}
         active="Project Verification"
       />
       <div className="flex flex-col sm:gap-8 sm:py-0 sm:pl-14 mb-8">
@@ -151,7 +133,7 @@ export default function ProfessionalInfo() {
             <RadioGroup
               defaultValue="all"
               value={filter}
-              onValueChange={(value: FilterOption) => handleFilterChange(value)}
+              onValueChange={(value) => handleFilterChange(value)}
               className="space-y-2"
             >
               <div className="flex items-center space-x-2">

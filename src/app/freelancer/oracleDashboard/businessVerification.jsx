@@ -1,25 +1,25 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Filter, PackageOpen } from 'lucide-react';
 
-import { Button } from './components/ui/button';
+import { Button } from '../../../components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from './components/ui/dialog';
-import { RadioGroup, RadioGroupItem } from './components/ui/radio-group';
-import Header from './components/header/header';
-import SidebarMenu from './components/menu/sidebarMenu';
+} from '../../../components/ui/dialog';
+import { RadioGroup, RadioGroupItem } from '../../../components/ui/radio-group';
+import Header from '../../../components/header/header';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from './config/menuItems/freelancer/oracleMenuItems';
-import { StatusEnum } from './utils/freelancer/enum';
-import { axiosInstance } from './lib/axiosinstance';
-import { toast } from './components/ui/use-toast';
-import BusinessVerificationCard from './components/cards/oracleDashboard/businessVerificationCard';
+} from '../../../config/menuItems/freelancer/oracleMenuItems';
+import { StatusEnum } from '../../../utils/freelancer/enum';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import { toast } from '../../../components/ui/use-toast';
+import BusinessVerificationCard from '../../../../components/cards/oracleDashboard/businessVerificationCard';
 
 export default function ProfessionalInfo() {
   const [businessdata, setBusinessData] = useState([]);

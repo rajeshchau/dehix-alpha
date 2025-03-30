@@ -2,19 +2,19 @@
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 
-import { RootState } from '@/lib/store';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import ExperienceCard from '@/components/cards/experienceCard';
-import { axiosInstance } from '@/lib/axiosinstance';
-import { AddExperience } from '@/components/dialogs/addExperiences';
+import { RootState } from '../../../lib/store';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import ExperienceCard from '../../../components/cards/experienceCard';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import { AddExperience } from '../../../components/dialogs/addExperiences';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/settingsMenuItems';
-import Header from '@/components/header/header';
-import { toast } from '@/components/ui/use-toast';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Card, CardContent } from '@/components/ui/card';
+} from '../../../config/menuItems/freelancer/settingsMenuItems';
+import Header from '../../../components/header/header';
+import { toast } from '../../../components/ui/use-toast';
+import { Skeleton } from '../../../components/ui/skeleton';
+import { Card, CardContent } from '../../../components/ui/card';
 
 export default function ProfessionalInfo() {
   const user = useSelector((state) => state.user);

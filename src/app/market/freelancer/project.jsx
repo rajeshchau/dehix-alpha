@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import ProjectComponent from '@/components/marketComponents/projectComponents/project-comp';
-import OtherBits from '@/components/marketComponents/sidebar-projectComponents/otherBids/other-bids';
-import ProjectSidebar from '@/components/marketComponents/sidebar-projectComponents/sidebar';
-import dummyData from '@/dummydata.json';
+import ProjectComponent from '../../../components/marketComponents/projectComponents/project-comp';
+import OtherBits from '../../../components/marketComponents/sidebar-projectComponents/otherBids/other-bids';
+import ProjectSidebar from '../../../components/marketComponents/sidebar-projectComponents/sidebar';
+import dummyData from '../../../dummydata.json';
 
 const ProjectPage = () => {
   const project = dummyData.marketFreelancerProject;

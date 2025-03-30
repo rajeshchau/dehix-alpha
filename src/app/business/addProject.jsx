@@ -1,12 +1,12 @@
 'use client';
 
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import { CreateProjectBusinessForm } from '@/components/form/businessCreateProjectForm';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import { CreateProjectBusinessForm } from '../../components/form/businessCreateProjectForm';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/business/dashboardMenuItems';
-import Header from '@/components/header/header';
+} from '../../config/menuItems/business/dashboardMenuItems';
+import Header from '../../components/header/header';
 
 export default function Dashboard() {
   // Removed: const user = useSelector((state: RootState) => state.user);

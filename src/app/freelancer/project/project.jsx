@@ -3,17 +3,17 @@ import { Loader2 } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import Header from '@/components/header/header';
-import { CardTitle } from '@/components/ui/card';
-import ProjectDetailCard from '@/components/freelancer/project/projectDetailCard';
-import { ProjectProfileDetailCard } from '@/components/freelancer/project/projectProfileDetailCard';
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import Header from '../../../components/header/header';
+import { CardTitle } from '../../../components/ui/card';
+import ProjectDetailCard from '../../../components/freelancer/project/projectDetailCard';
+import { ProjectProfileDetailCard } from '../../../components/freelancer/project/projectProfileDetailCard';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsTop,
   menuItemsBottom,
-} from '@/config/menuItems/freelancer/dashboardMenuItems';
-import { axiosInstance } from '@/lib/axiosinstance';
-import { toast } from '@/components/ui/use-toast';
+} from '../../../config/menuItems/freelancer/dashboardMenuItems';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import { toast } from '../../../components/ui/use-toast';
 
 export default function Dashboard() {
   const { project_id } = useParams();

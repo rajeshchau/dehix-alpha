@@ -10,20 +10,20 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from './components/ui/dropdown-menu';
-import Header from './components/header/header';
-import SidebarMenu from './components/menu/sidebarMenu';
+} from '../../../components/ui/dropdown-menu';
+import Header from '../../../components/header/header';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from './config/menuItems/freelancer/interviewMenuItems';
-import { Button } from './components/ui/button';
-import DehixInterviews from './components/freelancer/dehix-talent-interview/DehixInterviews';
-import { Input } from './components/ui/input';
-import { axiosInstance } from './lib/axiosinstance';
-import SkeletonLoader from './components/shared/SkeletonLoader';
-import Projects from './components/freelancer/projectInterview/ProjectInterviews';
-import { toast } from './components/ui/use-toast';
+} from '../../../config/menuItems/freelancer/interviewMenuItems';
+import { Button } from '../../../components/ui/button';
+import DehixInterviews from '../../../components/freelancer/dehix-talent-interview/DehixInterviews';
+import { Input } from '../../../components/ui/input';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import SkeletonLoader from '../../../components/shared/SkeletonLoader';
+import Projects from '../../../components/freelancer/projectInterview/ProjectInterviews';
+import { toast } from '../../../components/ui/use-toast';
 
 export default function CurrentPage() {
   const [filter, setFilter] = useState('All');
