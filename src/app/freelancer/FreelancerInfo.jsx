@@ -2,18 +2,18 @@
 
 import React from 'react';
 
-import { Search } from '@/components/search';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import DropdownProfile from '@/components/shared/DropdownProfile';
-import Breadcrumb from '@/components/shared/breadcrumbList';
-import CollapsibleSidebarMenu from '@/components/menu/collapsibleSidebarMenu';
+import { Search } from '../../components/search';
+import { Card } from '../../components/ui/card';
+import { Badge } from '../../components/ui/badge';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import DropdownProfile from '../../components/shared/DropdownProfile';
+import Breadcrumb from '../../components/shared/breadcrumbList';
+import CollapsibleSidebarMenu from '../../components/menu/collapsibleSidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/settingsMenuItems';
-import { getBadgeColor } from '@/utils/common/getBadgeStatus';
+} from '../../config/menuItems/freelancer/settingsMenuItems';
+import { getBadgeColor } from '../../utils/common/getBadgeStatus';
 
 // Dummy data
 const dummyData = {

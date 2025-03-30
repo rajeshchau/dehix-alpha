@@ -1,13 +1,13 @@
 'use client';
 import { useSelector } from 'react-redux';
 
-import KYCForm from '@/components/form/kycFreelancerForm';
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import KYCForm from '../../../components/form/kycFreelancerForm';
+import Header from '../../../components/header/header';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
     menuItemsBottom,
     menuItemsTop,
-} from '@/config/menuItems/freelancer/settingsMenuItems';
+} from '../../../config/menuItems/freelancer/settingsMenuItems';
 
 export default function PersonalInfo() {
   const user = useSelector((state) => state.user);

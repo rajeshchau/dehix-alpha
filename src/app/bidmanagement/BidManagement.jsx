@@ -1,14 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react';
 
-// Note: Replace with appropriate imports for your project
 import { useSelector } from 'react-redux';
 import axios from 'axios';
-import { toast } from 'react-toastify'; // Assuming you're using react-toastify
+import { toast } from 'react-toastify'; 
 
 const BidsPage = () => {
-  // Note: Replace with actual Redux selector or state management
   const user = {
-    uid: 'mockUserId' // This should come from your actual state management
+    uid: 'mockUserId'
   };
 
   const [projectIds, setProjectIds] = useState([]);
@@ -26,7 +24,6 @@ const BidsPage = () => {
   useEffect(() => {
     const fetchProjectIds = async () => {
       try {
-        // Replace with your actual API endpoint
         const response = await axios.get(`/api/project/business`, {
           params: { status: 'Pending' }
         });
@@ -47,7 +44,6 @@ const BidsPage = () => {
         const pendingBids = [];
 
         for (const projectId of projectIds) {
-          // Replace with your actual API endpoint
           const response = await axios.get(`/api/bid/${projectId}/bids`);
 
           const data = response.data.data;
@@ -90,12 +86,9 @@ const BidsPage = () => {
     }
 
     try {
-      // Replace with your actual API endpoint
       await axios.put(`/api/bid/${bidId}/status`, {
         bid_status: updatedStatus,
       });
-      
-      // Optionally refresh bids or update UI
       toast.success('Bid status updated successfully');
     } catch (error) {
       toast.error(errorToast.message);
@@ -103,7 +96,6 @@ const BidsPage = () => {
     }
   };
 
-  // Mock AppliedBids component since original wasn't provided
   const AppliedBids = ({ bids, onAction }) => (
     <div className="applied-bids">
       {bids.map(bid => (

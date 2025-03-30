@@ -1,6 +1,5 @@
 import React from 'react';
-import Link from 'react-router-dom';
-import { ThemeToggle } from '../../../../components/shared/ThemeToggle';
+import { ThemeToggle } from '../../../../components/shared/themeToggle';
 import FreelancerRegisterForm from '../../../../components/form/register/FreelancerRegisterForm';
 import { Button } from '../../../../components/ui/Button';
 

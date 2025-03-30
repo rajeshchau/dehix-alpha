@@ -1,9 +1,7 @@
 import { useState } from 'react';
 
-// Mock ThemeToggle component
 const ThemeToggle = () => <button>Toggle Theme</button>;
 
-// Mock Button component
 const Button = ({ children, variant, size, className, asChild, onClick }) => (
   <button 
     className={`${className} ${variant === 'outline' ? 'border border-gray-300' : ''} 
@@ -15,7 +13,6 @@ const Button = ({ children, variant, size, className, asChild, onClick }) => (
   </button>
 );
 
-// Mock business register form component
 const BusinessRegisterForm = () => {
   const [formData, setFormData] = useState({
     businessName: '',
@@ -34,7 +31,6 @@ const BusinessRegisterForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Implement registration logic here
   };
 
   return (

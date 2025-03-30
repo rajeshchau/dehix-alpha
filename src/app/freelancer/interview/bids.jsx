@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import SidebarMenu from './components/menu/sidebarMenu';
-import { menuItemsBottom, menuItemsTop } from './config/menuItems/freelancer/interviewMenuItems';
-import Header from './components/header/header';
-import Bids from './components/freelancer/bids/Bids';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import { menuItemsBottom, menuItemsTop } from '../../../config/menuItems/freelancer/interviewMenuItems';
+import Header from '../../../components/header/header';
+import Bids from '../../../components/freelancer/bids/Bids';
 
 export default function ProfilePage() {
   const user = useSelector((state) => state.user);

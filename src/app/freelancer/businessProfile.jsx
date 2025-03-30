@@ -5,15 +5,15 @@ import { useParams } from 'next/navigation';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '../config/menuItems/business/dashboardMenuItems';
-import SidebarMenu from '../components/menu/sidebarMenu';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { toast } from '../components/ui/use-toast';
-import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
-import { axiosInstance } from '../lib/axiosinstance';
-import { Skeleton } from '../components/ui/skeleton';
-import Header from '../components/header/header';
-import { Button } from '../components/ui/button';
+} from '../../../../config/menuItems/business/dashboardMenuItems';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
+import { toast } from '../../components/ui/use-toast';
+import { Avatar, AvatarFallback, AvatarImage } from '../../components/ui/avatar';
+import { axiosInstance } from '../../lib/axiosinstance';
+import { Skeleton } from '../../components/ui/skeleton';
+import Header from '../../components/header/header';
+import { Button } from '../../components/ui/button';
 
 export default function BusinessProfile() {
   const { business_id } = useParams();

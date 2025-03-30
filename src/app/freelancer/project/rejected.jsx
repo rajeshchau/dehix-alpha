@@ -3,15 +3,15 @@ import { Loader2, PackageOpen } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/projectMenuItems';
-import { axiosInstance } from '@/lib/axiosinstance';
-import { ProjectCard } from '@/components/cards/projectCard';
-import Header from '@/components/header/header';
-import { toast } from '@/components/ui/use-toast';
+} from '../../../config/menuItems/freelancer/projectMenuItems';
+import { axiosInstance } from '../../../lib/axiosinstance';
+import { ProjectCard } from '../../../components/cards/projectCard';
+import Header from '../../../components/header/header';
+import { toast } from '../../../components/ui/use-toast';
 
 export default function RejectedProject() {
   const user = useSelector((state) => state.user);

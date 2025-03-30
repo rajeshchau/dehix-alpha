@@ -7,14 +7,14 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from './components/ui/dropdown-menu';
-import SidebarMenu from './components/menu/sidebarMenu';
+} from '../../../components/ui/dropdown-menu';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from './config/menuItems/freelancer/interviewMenuItems';
-import { Button } from './components/ui/button';
-import Header from './components/header/header';
+} from '../../../config/menuItems/freelancer/interviewMenuItems';
+import { Button } from '../../../components/ui/button';
+import Header from '../../../components/header/header';
 
 export default function HistoryPage() {
   const [filter, setFilter] = useState('All');

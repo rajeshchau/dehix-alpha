@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Header from './components/header/header';
-import SidebarMenu from './components/menu/sidebarMenu';
+import Header from '../../../components/header/header';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from './config/menuItems/freelancer/interviewMenuItems';
-import InterviewProfile from './components/freelancer/interviewProfile/interviewProfile';
+} from '../../../config/menuItems/freelancer/interviewMenuItems';
+import InterviewProfile from '../../../components/freelancer/interviewProfile/interviewProfile';
 
 export default function ProfilePage() {
   const user = useSelector((state) => state.user);

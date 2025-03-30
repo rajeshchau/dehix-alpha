@@ -1,13 +1,13 @@
 'use client';
 import * as React from 'react';
 
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import SidebarMenu from '../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/dashboardMenuItems';
-import ScheduleInterviewDialog from '@/components/freelancer/scheduleInterview/scheduleInterviewDialog';
-import Header from '@/components/header/header';
+} from '../../config/menuItems/freelancer/dashboardMenuItems';
+import ScheduleInterviewDialog from '../../components/freelancer/scheduleInterview/scheduleInterviewDialog';
+import Header from '../../components/header/header';
 
 export default function ProfilePage() {
   return (

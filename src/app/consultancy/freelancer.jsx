@@ -7,12 +7,12 @@ import { Controller, useFieldArray, useForm } from 'react-hook-form';
 import { useSelector } from 'react-redux';
 import { z } from 'zod';
 
-import ConsultantCard from '@/components/cards/ConsultantCard';
-import { ProjectCard } from '@/components/cards/projectCard';
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import { Button } from '@/components/ui/button';
-import { CardTitle } from '@/components/ui/card';
+import ConsultantCard from '../../components/cards/ConsultantCard';
+import { ProjectCard } from '../../components/cards/projectCard';
+import Header from '../../components/header/header';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import { Button } from '../../components/ui/button';
+import { CardTitle } from '../../components/ui/card';
 import {
     Dialog,
     DialogContent,
@@ -21,7 +21,7 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from '@/components/ui/dialog';
+} from '../../components/ui/dialog';
 import {
     Form,
     FormControl,
@@ -29,19 +29,19 @@ import {
     FormItem,
     FormLabel,
     FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
+} from '../../components/ui/form';
+import { Input } from '../../components/ui/input';
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select';
-import { Separator } from '@/components/ui/separator';
-import { toast } from '@/components/ui/use-toast';
-import { axiosInstance } from '@/lib/axiosinstance';
-import { ProjectStatus } from '@/utils/freelancer/enum';
+} from '../../components/ui/select';
+import { Separator } from '../../components/ui/separator';
+import { toast } from '../../components/ui/use-toast';
+import { axiosInstance } from '../../lib/axiosinstance';
+import { ProjectStatus } from '../../utils/freelancer/enum';
 
 // Define the schema for the form using Zod
 const consultancyFormSchema = z.object({

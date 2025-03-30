@@ -2,16 +2,16 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import EducationInfoCard from '@/components/cards/educationInfoCard';
-import { AddEducation } from '@/components/dialogs/addEduction';
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import { toast } from '@/components/ui/use-toast';
+import EducationInfoCard from '../../../components/cards/educationInfoCard';
+import { AddEducation } from '../../../components/dialogs/addEduction';
+import Header from '../../../components/header/header';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import { toast } from '../../../components/ui/use-toast';
 import {
     menuItemsBottom,
     menuItemsTop,
-} from '@/config/menuItems/freelancer/settingsMenuItems';
-import { axiosInstance } from '@/lib/axiosinstance';
+} from '../../../config/menuItems/freelancer/settingsMenuItems';
+import { axiosInstance } from '../../../lib/axiosinstance';
 
 export default function Education() {
   const user = useSelector((state) => state.user);

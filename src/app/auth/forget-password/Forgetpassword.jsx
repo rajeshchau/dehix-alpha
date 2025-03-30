@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { LoaderCircle } from 'lucide-react';
 
-// Assuming these components are available in your React project
-// You'll need to create or import equivalent components
 const ThemeToggle = () => <button>Toggle Theme</button>;
 const Button = ({ children, type, className, disabled, asChild, variant, size, onClick }) => (
   <button 
@@ -63,8 +61,6 @@ export default function ForgotPassword() {
         title: 'Success',
         description: 'Password reset email sent! Please check your inbox.',
       });
-      // In React, you would typically use React Router for navigation
-      // This is a simplified approach
       window.location.href = '/auth/login';
     } catch (error) {
       toast({

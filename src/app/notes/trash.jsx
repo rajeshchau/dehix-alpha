@@ -4,16 +4,16 @@ import { Loader2 } from 'lucide-react';
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import NotesHeader from '@/components/business/market/NotesHeader';
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import NotesRender from '@/components/shared/NotesRender';
-import { toast } from '@/components/ui/use-toast';
-import { notesMenu } from '@/config/menuItems/business/dashboardMenuItems';
-import { menuItemsBottom } from '@/config/menuItems/freelancer/dashboardMenuItems';
-import useFetchNotes from '@/hooks/useFetchNotes';
-import { axiosInstance } from '@/lib/axiosinstance';
-import { LabelType, NoteType } from '@/utils/types/note';
+import NotesHeader from '../../components/business/market/NotesHeader';
+import Header from '../../components/header/header';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import NotesRender from '../../components/shared/NotesRender';
+import { toast } from '../../components/ui/use-toast';
+import { notesMenu } from '../../config/menuItems/business/dashboardMenuItems';
+import { menuItemsBottom } from '../../config/menuItems/freelancer/dashboardMenuItems';
+import useFetchNotes from '../../hooks/useFetchNotes';
+import { axiosInstance } from '../../lib/axiosinstance';
+import { LabelType, NoteType } from '../../utils/types/note';
 
 const Notes = () => {
   // Get userId from Redux

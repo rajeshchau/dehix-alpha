@@ -1,22 +1,22 @@
 'use client';
 import { useState } from 'react';
 
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import SidebarMenu from '../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/business/dashboardMenuItems';
-import { CardTitle } from '@/components/ui/card';
-import SkillDomainForm from '@/components/business/hireTalent.tsx/skillDomainForm';
-import TalentCard from '@/components/business/hireTalent.tsx/talentCard';
+} from '../../config/menuItems/business/dashboardMenuItems';
+import { CardTitle } from '../../components/ui/card';
+import SkillDomainForm from '../../components/business/hireTalent.tsx/skillDomainForm';
+import TalentCard from '../../components/business/hireTalent.tsx/talentCard';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import Header from '@/components/header/header';
+} from '../../components/ui/select';
+import Header from '../../components/header/header';
 
 export default function Talent() {
   const [skillFilter, setSkillFilter] = useState('all');

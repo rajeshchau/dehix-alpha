@@ -2,22 +2,22 @@
 import { Filter, PackageOpen } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
 
-import { Button } from '../components/ui/button';
+import { Button } from '../../../components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from '../components/ui/dialog';
-import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
-import SidebarMenu from '../components/menu/sidebarMenu';
-import { menuItemsBottom, menuItemsTop } from '../config/menuItems/freelancer/oracleMenuItems';
-import EducationVerificationCard from '../components/cards/oracleDashboard/educationVerificationCard';
-import { StatusEnum } from '../utils/freelancer/enum';
-import Header from '../components/header/header';
-import { toast } from '../components/ui/use-toast';
-import { axiosInstance } from '../lib/axiosinstance';
+} from '../../../components/ui/dialog';
+import { RadioGroup, RadioGroupItem } from '../../../components/ui/radio-group';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import { menuItemsBottom, menuItemsTop } from '../../../config/menuItems/freelancer/oracleMenuItems';
+import EducationVerificationCard from '../../../components/cards/oracleDashboard/educationVerificationCard';
+import { StatusEnum } from '../../../utils/freelancer/enum';
+import Header from '../../../components/header/header';
+import { toast } from '../../../components/ui/use-toast';
+import { axiosInstance } from '../../../lib/axiosinstance';
 
 function ProfessionalInfo() {
   const [educationdata, setEducationData] = useState([]);

@@ -5,17 +5,17 @@ import { useSelector } from 'react-redux';
 
 import TicketForm from './supportTicketForm';
 
-import FAQAccordion from '@/components/accordian/faqAccordian';
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { toast } from '@/components/ui/use-toast';
+import FAQAccordion from '../../components/accordian/faqAccordian';
+import Header from '../../components/header/header';
+import SidebarMenu from '../../components/menu/sidebarMenu';
+import { Button } from '../../components/ui/button';
+import { Input } from '../../components/ui/input';
+import { Textarea } from '../../components/ui/textarea';
+import { toast } from '../../components/ui/use-toast';
 import {
     menuItemsTop,
     useMenuItemsBottom,
-} from '@/config/menuItems/freelancer/supportMenuItems';
+} from '../../config/menuItems/freelancer/supportMenuItems';
 
 const HomePage = () => {
   const user = useSelector((state) => state.user);

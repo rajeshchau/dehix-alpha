@@ -3,7 +3,7 @@ import { Loader2, PackageOpen } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import SidebarMenu from '../../../../components/menu/sidebarMenu';
 import {
   menuItemsBottom,
   menuItemsTop,

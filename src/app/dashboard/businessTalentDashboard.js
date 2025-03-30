@@ -1,12 +1,12 @@
 'use client';
 
-import SkillDomainForm from '@/components/freelancer/talent/skilldomainForm';
-import Header from '@/components/header/header';
-import SidebarMenu from '@/components/menu/sidebarMenu';
+import SkillDomainForm from '../../components/freelancer/talent/skilldomainForm';
+import Header from '../../components/header/header';
+import SidebarMenu from '../../components/menu/sidebarMenu';
 import {
     menuItemsBottom,
     menuItemsTop,
-} from '@/config/menuItems/freelancer/dashboardMenuItems';
+} from '../../config/menuItems/freelancer/dashboardMenuItems';
 import React from 'react';
 
 export default function Talent() {

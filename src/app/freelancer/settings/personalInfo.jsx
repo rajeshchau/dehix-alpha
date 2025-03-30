@@ -1,14 +1,14 @@
 'use client';
 import { useSelector } from 'react-redux';
 
-import { RootState } from '@/lib/store';
-import SidebarMenu from '@/components/menu/sidebarMenu';
-import { ProfileForm } from '@/components/form/profileForm';
+import { RootState } from '../../../lib/store';
+import SidebarMenu from '../../../components/menu/sidebarMenu';
+import { ProfileForm } from '../../../components/form/profileForm';
 import {
   menuItemsBottom,
   menuItemsTop,
-} from '@/config/menuItems/freelancer/settingsMenuItems';
-import Header from '@/components/header/header';
+} from '../../../config/menuItems/freelancer/settingsMenuItems';
+import Header from '../../../components/header/header';
 
 export default function PersonalInfo() {
   const user = useSelector((state) => state.user);
