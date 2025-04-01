@@ -5,9 +5,9 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { DayPicker } from 'react-day-picker';
 
-import { cn } from '../lib/utils';
-import { buttonVariants } from '../components/ui/button';
-import { Button } from '../components/ui/button';
+import { cn } from '../../lib/utils';
+import { buttonVariants } from '../../components/ui/button';
+import { Button } from '../../components/ui/button';
 
 const CarouselContext = createContext(null);
 

@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Inter } from 'next/font/google';
 
-function App() {
-  const [count, setCount] = useState(0)
+import './globals.css';
+import StoreProvider from './app/storeProvider';
+import { AuthProvider } from './app/AuthContext';
 
+import { ThemeProvider } from './components/theme-provider';
+import { TooltipProvider } from './components/ui/tooltip';
+import { Toaster } from './components/ui/toaster';
+import NetworkProvider from './utils/NetworkProvider';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata = {
+  title: 'Dehix',
+  description: 'Freelancer platform',
+};
+
+export default function RootLayout({ children }) {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <StoreProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <AuthProvider>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <TooltipProvider>
+                <NetworkProvider>{children}</NetworkProvider>
+              </TooltipProvider>
+              <Toaster />
+            </ThemeProvider>
+          </AuthProvider>
+        </body>
+      </html>
+    </StoreProvider>
+  );
 }
-
-export default App
